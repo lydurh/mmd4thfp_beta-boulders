@@ -1,5 +1,5 @@
 /* Responsive */
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .hamburger {
     display: none;
   }
@@ -8,10 +8,11 @@
     flex-direction: row;
     position: static;
     background: none;
+    justify-content: flex-end;
   }
   .menu a {
     margin: 0 1rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #fff;
   }
 }
