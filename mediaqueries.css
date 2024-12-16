@@ -16,3 +16,9 @@
     color: #fff;
   }
 }
+
+@media (min-width: 800px) {
+  .layout {
+    padding: 1rem 1.5rem;
+  }
+}
