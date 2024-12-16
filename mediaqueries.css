@@ -1,0 +1,17 @@
+/* Responsive */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+  }
+  .menu a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+}

@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #111; /* Dark background */
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #111;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  width: 40px;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: #fff;
+  height: 3px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Menu */
+.menu {
+  align-items: flex-start;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  text-align: center;
+  padding: 2rem 0;
+  padding-left: 40px;
+}
+
+.menu a {
+  color: #f8f8f8; /* Red text color */
+  font-size: 3.5rem;
+  text-decoration: none;
+  margin: 1rem 0;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #fff; /* Hover effect */
+}
+
+/* Active Menu (JS adds this class) */
+.menu.active {
+  display: flex;
+}
+
+/* Hamburger Animation */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive */
+@media (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    justify-content: flex-end;
+  }
+  .menu a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
