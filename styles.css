@@ -1,6 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
+/* buttions */
+
+button {
+  background-color: #0f6ab9; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  font-size: 1.25rem;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #2a55a3; /* Green */
+  color: white;
+}
+
 /* typography */
 
 /*
@@ -57,7 +79,6 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Archivo", serif;
 }
 
 body {
@@ -68,19 +89,27 @@ body {
 /*index.html*/
 
 #section1 {
-  justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  justify-content: center;
+  align-items: left;
+
   gap: 2rem;
   background-image: url(/assets/Img/homepage-background.png);
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents image repetition */
-  height: 100vh; /* Make it full viewport height */
-  width: 100vw; /* Full width */
-  padding: 0; /* Remove padding on the section */
-  position: relative; /* Keeps it in normal flow */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  position: relative;
+}
+#section1 button {
+  margin: 10px;
+}
+
+#section1 h1 {
+  pad: 50px;
 }
 
 #container {
@@ -92,16 +121,15 @@ body {
 }
 
 .layout {
-  padding: 1rem 1.5rem;
 }
 
 /* Navbar */
 .navbar {
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #111;
   position: relative;
   z-index: 1000;
 }
@@ -121,6 +149,78 @@ body {
   width: 4rem;
 }
 
+#section2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 1.24rem;
+}
+
+#section2 div {
+  margin: 1rem;
+}
+
+#section2 h3 {
+  color: #0f6ab9;
+}
+
+#section2 h5 {
+  color: #111;
+}
+
+#section2 button {
+  width: 100%;
+}
+
+#section2 img {
+  width: 100%;
+  align-items: center;
+}
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  padding: 1.24rem;
+}
+
+#section3 div {
+  margin: 1rem;
+}
+
+#section3 h3 {
+  color: #0f6ab9;
+}
+
+#section3 h5 {
+  color: #f8f8f8;
+}
+
+#section3 button {
+  width: 100%;
+}
+
+#section3 img {
+  width: 100%;
+  align-items: center;
+}
+
+#section4 {
+  display: flex;
+  flex-direction: column;
+  background-color: #131313;
+  padding: 1.24rem;
+  margin: 1rem;
+}
+
+#section4 #imagecontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#section4 img {
+  width: 100%;
+}
 /* Hamburger Icon */
 .hamburger {
   display: flex;
