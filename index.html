@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beta boulders</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/mediaqueries.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -35,8 +35,8 @@
     </nav>
     <main>
       <div class="layout">
-        <section id="section1">
-          <div id="container">
+        <div class="section">
+          <div class="container-hero">
             <div id="section1-text">
               <h1>
                 Welcome to <br />
@@ -44,58 +44,76 @@
               </h1>
               <h4>Where life meets balance</h4>
             </div>
-
             <div id="section1buttons">
               <button>Join us</button> <button>Contact us</button>
             </div>
           </div>
-        </section>
-        <section id="section2">
-          <div>
-            <h3>First time? No problem!</h3>
-            <h5>
-              Bouldering is a type of sport that involves short, fun routes and
-              is designed for everybody!
-            </h5>
-          </div>
-          <div>
-            <button>Get started</button>
-          </div>
-          <div>
-            <img
-              src="/assets/Img/handblue.jpg"
-              alt="A hand gripping a blue climbing hold"
-            />
-          </div>
-        </section>
+        </div>
+        <div class="section" style="background-color: #f8f8f8">
+          <div class="container-first">
+            <div id="container-first-join-text">
+              <div>
+                <h6>First time? No problem!</h6>
+                <h5>
+                  Bouldering is a type of sport that involves short, fun routes
+                  and is designed for everybody!
+                </h5>
+              </div>
 
-        <section id="section3">
-          <div>
-            <h3>Flexible packages, designed for you!</h3>
-            <h5>
-              We aim to offer the best value for your budget and lifestyle, no
-              commitment necessary.
-            </h5>
+              <div>
+                <button>Get started</button>
+              </div>
+            </div>
+
+            <div id="container-first-img">
+              <img
+                src="/assets/Img/handblue.jpg"
+                alt="A hand gripping a blue climbing hold"
+              />
+            </div>
           </div>
-          <div>
-            <button>Join us</button>
+        </div>
+        <div class="section">
+          <div class="container-join">
+            <div>
+              <h6>Flexible packages, designed for you!</h6>
+              <h5>
+                We aim to offer the best value for your budget and lifestyle, no
+                commitment necessary.
+              </h5>
+              <button>Join us</button>
+            </div>
+            <div id="container-join-img">
+              <img
+                src="/assets/Img/bbbbb.jpg"
+                alt="Image representing membership packages"
+              />
+            </div>
           </div>
-          <div>
-            <img
-              src="/assets/Img/bbbbb.jpg"
-              alt="Image representing membership packages"
-            />
+        </div>
+        <div class="section">
+          <div class="container-img-grid">
+            <h2>Locations</h2>
+            <div id="imagecontainer">
+              <div class="img_wrap">
+                <img src="/assets/Img/west-main.jpg" alt="Vanlose" />
+                <h1 class="img_description">WEST</h1>
+              </div>
+              <div class="img_wrap">
+                <img src="/assets/Img/south.jpg" alt="South" />
+                <h1 class="img_description">South</h1>
+              </div>
+              <div class="img_wrap">
+                <img src="/assets/Img/ost.jpg" alt="Osterbro" />
+                <h1 class="img_description">Osterbro</h1>
+              </div>
+              <div class="img_wrap">
+                <img src="/assets/Img/2025.jpg" alt="Coming 2025" />
+                <h1 class="img_description">Coming 2025</h1>
+              </div>
+            </div>
           </div>
-        </section>
-        <section id="section4">
-          <h3>Locations</h3>
-          <div id="imagecontainer">
-            <img src="/assets/Img/west-main.jpg" alt="Vanlose" />
-            <img src="/assets/Img/south.jpg" alt="Sydhavn" />
-            <img src="/assets/Img/ost.jpg" alt="osterbro" />
-            <img src="/assets/Img/2025.jpg" alt="new gym" />
-          </div>
-        </section>
+        </div>
       </div>
     </main>
     <script src="script.js"></script>

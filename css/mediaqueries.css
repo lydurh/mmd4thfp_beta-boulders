@@ -1,0 +1,95 @@
+@media (min-width: 800px) {
+  /*navbar*/
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    justify-content: flex-end;
+  }
+  .menu a {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    margin: 40px; /* Add larger margin for screens wider than 1200px */
+  }
+}
+
+/*index specific styling*/
+
+/*img grid*/
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .container-first {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+  }
+
+  .container-first div {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .container-first div h5 {
+    margin-top: 0.5rem;
+  }
+
+  #container-join-img {
+    position: relative;
+  }
+  #container-join-img img {
+    position: absolute;
+    margin-top: -50%;
+  }
+
+  .container-first div h6,
+  img,
+  button {
+    margin-top: 2rem;
+  }
+
+  .container-join {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .container-join div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .container-join div h5 {
+    margin-top: 0.5rem;
+  }
+
+  .container_img-grid div {
+    flex: 1;
+  }
+
+  .container_img-grid img {
+    flex: 1;
+  }
+
+  .container_img-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .img_wrap {
+    width: calc(50% - 7.5px); /* Two images per row with gap */
+  }
+}
